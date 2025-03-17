@@ -31,13 +31,13 @@ const extractsAnArrayValue =(arr) => {
 console.log(extractsAnArrayValue(what));
 
 const concatenate = (arr1, arr2, arr3, arr4) => {
-  return "${arr1} ${arr2} ${arr3} ${arr4}"
+  return `${arr1} ${arr2} ${arr3} ${arr4}`;
 }
 console.log(concatenate(extractsAnArrayValue(who), extractsAnArrayValue(action), extractsAnArrayValue(what), extractsAnArrayValue(when)));
 
 const generateExcuse = () => {
   return concatenate(extractsAnArrayValue(who), extractsAnArrayValue(action), extractsAnArrayValue(what), extractsAnArrayValue(when));
-}
+};
 
-
+console.log(generateExcuse());
 };
